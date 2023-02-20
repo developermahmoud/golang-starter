@@ -35,10 +35,6 @@ func StartApp() {
 	}
 	router.Use(sentrygin.New(sentrygin.Options{}))
 
-	router.GET("test", func(ctx *gin.Context) {
-		ctx.sen
-	})
-
 	// Bind custom validation
 	bindCustomRules()
 
