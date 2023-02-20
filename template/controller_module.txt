@@ -1,0 +1,15 @@
+package controllers
+
+import (
+	"bm-support/src/repositories"
+)
+
+type $CONTROLLER_CAMEL$Controller struct {
+	$CONTROLLER_LOWER$Repository repositories.$CONTROLLER_CAMEL$Repository
+}
+
+func New$CONTROLLER_CAMEL$Controller() $CONTROLLER_CAMEL$Controller {
+	return $CONTROLLER_CAMEL$Controller{
+		$CONTROLLER_LOWER$Repository: repositories.New$CONTROLLER_CAMEL$Repository(),
+	}
+}

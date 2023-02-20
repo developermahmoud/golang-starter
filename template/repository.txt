@@ -1,0 +1,11 @@
+package repositories
+
+type $REPOSITORY_CAMEL$Repository interface {
+}
+
+type $REPOSITORY_LOWER$Repository struct{}
+
+func New$REPOSITORY_CAMEL$Repository() $REPOSITORY_CAMEL$Repository {
+	return &$REPOSITORY_LOWER$Repository{}
+}
+
